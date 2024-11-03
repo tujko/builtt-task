@@ -12,7 +12,7 @@ function Login() {
                         <label htmlFor="password"><span className="input-label">Šifra</span></label>
                         <input type="password" name="password" placeholder="Upišite šifru" />
                     </div>
-                    <button className="btn">Prijavi se na nalog</button>
+                    <button className="btn" type="submit">Prijavi se na nalog</button>
                 </form>
             </div>
         </div>
