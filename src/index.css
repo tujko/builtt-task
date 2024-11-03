@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+
+body {
+  @apply text-base lg:text-lg;
+}
+
+#root {
+  @apply absolute w-full h-full;
+}
+
+h3 {
+  @apply text-xl lg:text-2xl mb-5 lg:mb-10;
+}
+
+.btn {
+  @apply bg-black rounded-full text-white h-[2.813rem] flex justify-center items-center;
+}
+
+.top-header {
+  @apply px-4 lg:px-[4.313rem] flex justify-between items-center h-[4.313rem] bg-silverDark;
+}
+
+/* Login Page and 404 Page */
+
+.login, .not-found {
+  @apply flex justify-center items-center h-full w-full;
+  span.input-label {
+    @apply text-xs;
+  }
+}
+
+.login-wrapper, .not-found-wrapper {
+  @apply flex flex-col w-full max-w-[26.25rem];
+}
+
+input {
+  @apply h-16 border-b placeholder:text-softDarkGray;
+  &:focus-visible {
+    @apply border-x-transparent border-t-transparent border-b-softDarkGray outline-0;
+  }
+}
+
+/* Product Listing Page */
+
+.product-list {
+  @apply mx-4 lg:mx-[7.5rem] my-4 lg:mt-[2.875rem] pb-16 lg:pb-36;
+  .items {
+    @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-16;
+  }
+}
+
+.product-item {
+  h3 {
+    @apply h-16;
+  }
+  img {
+    @apply w-full max-w-full;
+  }
+}
+
+.number-of-items {
+  @apply text-sm text-middleDark;
+}
