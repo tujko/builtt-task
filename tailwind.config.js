@@ -12,7 +12,9 @@ export default {
         silverDark: "#86969c"
       },
       colors: {
+        lightGray: "#f6f6f6",
         softDarkGray: "#757575",
+        middleGray: "#969696",
         middleDark: "#808080",
         silverDark: "#86969c",
       }

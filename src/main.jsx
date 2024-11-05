@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { store } from './redux/store'
+import { Provider } from 'react-redux'
 import './built/index.css'
 import PageNotFound from './pages/PageNotFound'
 import List from './pages/List'
@@ -12,24 +14,21 @@ const router = createBrowserRouter([
     path: "/",
     element: <Login />,
     errorElement: <PageNotFound />,
-    /* children: [{
-      path: "",
-      element: "",
-      action: ""
-    }] */
   },
   {
     path: "/list",
-    element: <List />
+    element: <List />,
   },
   {
     path: "/cart",
-    element: <Cart />
+    element: <Cart />,
   }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>
 );

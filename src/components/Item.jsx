@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CartAdder from "../redux/cartAdder";
 
 function Item(input) {
     const [image, setImage] = useState(input.item.product.image)
@@ -6,7 +7,9 @@ function Item(input) {
         try {
             if (input.item.product.image) {
                 const response = await import(`../assets/product-images/${input.item.product.image}.jpg`);
-                setImage(response.default);
+                if(response.default) {
+                    setImage(response.default);
+                }
             }
         } catch (error) {
             console.log(error);
@@ -15,10 +18,13 @@ function Item(input) {
     fetchImage();
     return <>
         <div className="product-item">
-            <img src={image} alt={input.item.product.name} />
+            <div className="image-container">
+                <img src={image} alt={input.item.product.name} />
+                <CartAdder cartInput={input} type="list" />
+            </div>
             <h3>{input.item.product.name}</h3>
             <div className="price">
-                <span>{input.item.product.price}<sup>RSD</sup></span>
+                <span>{input.item.product.price}</span>&nbsp;<sup>RSD</sup>
             </div>
         </div>
     </>

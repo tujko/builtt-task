@@ -5,7 +5,7 @@ function PageNotFound() {
         <div className="not-found">
             <div className="not-found-wrapper">
                 <h3>404 Page Not Found</h3>
-                <Link className="btn" to="/">Back</Link>
+                <Link className="btn" to="/" relative="path">Back</Link>
             </div>
         </div>
     </>

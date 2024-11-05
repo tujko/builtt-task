@@ -1,77 +1,107 @@
 [
     {
+        "sku": "1",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-8",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "2",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-7",
+        "qty": 5,
         "price": 547
     },
     {
+        "sku": "3",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-6",
+        "qty": 5,
         "price": 548
     },
     {
+        "sku": "3",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-1",
+        "qty": 5,
         "price": 549
     },
     {
+        "sku": "4",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "5",
         "name": "Kikiriki puter",
         "image": "Proizvod-1",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "6",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-4",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "7",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "8",
         "name": "Kikiriki puter",
         "image": "Proizvod-2",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "9",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-3",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "10",
         "name": "Kikiriki puter",
         "image": "Proizvod-5",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "11",
         "name": "Kikiriki puter",
         "image": "Proizvod-2",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "12",
         "name": "Kikiriki puter",
         "image": "Proizvod-1",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "13",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "granumfood_puteri",
+        "qty": 5,
         "price": 546
     },
     {
+        "sku": "14",
         "name": "Naturela sa Rogačem i Agava Šećerom",
         "image": "Proizvod-4",
+        "qty": 5,
         "price": 546
     }
 ]

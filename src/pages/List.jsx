@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import Header from "../components/Header";
 import Item from "../components/Item"
 import Products from "../products.json";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function List() {
+    const navigate = useNavigate();
+    let loggedIn = useSelector((state) => state.customer.loggedIn);
+    if (!loggedIn) {
+        useEffect(() => {
+            navigate("/");
+        });
+    }
     return <>
         <Header/>
         <div className="product-list">
